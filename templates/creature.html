@@ -11,7 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 
-  <h1> This the {{ name }}</h1>
+  {% include "navigation.html" %}
+
+  <div class="container">
+
+      <h1> This the {{ creature.name }}</h1>
+      <img src="static/creature%20({{ creature.image }}).png">
+      <p>HP: {{ craeture.hp }}</p>
+      <p>Attack: {{ craeture.attack }}</p>
+      <p>Defense: {{ craeture.defense }}</p>
+      <p>Speed: {{ craeture.speed }}</p>
+      <p>Ability: {{ craeture.ability.name }}</p>
+      <p>Description: {{ craeture.description }}</p>
+      <p>Lore: {{ craeture.lore }}</p>
+
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
